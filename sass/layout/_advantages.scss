@@ -1,0 +1,55 @@
+.advantages-main-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skills-sizes {
+    width: 270px;
+    justify-content: space-between;
+ &::before {
+        display: block;
+        content: '';
+        height: 120px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F5F4FA;
+
+        margin-bottom: 30px;
+
+    }
+}
+
+
+
+.icon-skills1::before {
+    background-image: url(../images/advantages/antenna\ 1.svg);
+
+}
+
+.icon-skills2::before {
+    background-image: url(../images/advantages/clock\ 1.svg );
+
+}
+
+.icon-skills3::before {
+    background-image: url(../images/advantages/diagram\ 1.svg);
+}
+
+.icon-skills4::before {
+    background-image: url(../images/advantages/astronaut\ 1.svg);
+}
+
+
+
+
+
+.skills-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+}
