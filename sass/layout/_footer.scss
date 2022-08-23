@@ -11,6 +11,7 @@
 }
 
 .footer-logo {
+    font-family: Raleway;
     margin-top: 60px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -24,17 +25,18 @@
 
 .list__address {
     margin-top: 20px;
+    font-family: var(--primary-font);
 }
 
 
 
-.list__contact {
+.list__item {
     margin-top: 9px;
-
+    font-family: var(--primary-font);
 }
 
 .logo-accent2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
@@ -47,7 +49,7 @@
 }
 
 
-.footer-pages__link{
+.list__link{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -73,15 +75,15 @@
 }
 
 
-.footer-list-icon {
+.footer-list {
     display: flex;
     justify-content: center;
     gap: 10px;
     & {
         fill: #FFFFFF;
     
-    .footer-list-link:hover &,
-    .footer-list-link:focus & {
+    .footer-list__link:hover &,
+    .footer-list__link:focus & {
     background-color: #2196F3;
             }
     
@@ -90,7 +92,7 @@
 
 
 
-.footer-list-link {
+.footer-list__link {
     @extend %align;
     width: 44px;
     height: 44px;
@@ -131,7 +133,7 @@
 
 }
 
-.footer-form-input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     border: 1px solid;
@@ -145,7 +147,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-submit {
+.footer-form__submit {
     display: flex;
     gap: 10px;
     font-weight: 700;

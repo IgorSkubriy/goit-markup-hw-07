@@ -18,10 +18,12 @@
 
 
 
-.posters-item {
+.poster-list{
     display: flex;
     flex-wrap: wrap;
-
+    gap: 30px;
+    
+    text-decoration: none;
 }
 
 .poster-item-boxes1:hover,
@@ -81,7 +83,7 @@
 
 
 
-.poster-item__boxes {
+.poster-list__item {
     width: 370px;
     border: 1px solid #EEEEEE;
     transition: box-shadow var(--transition-dur-func);
@@ -89,9 +91,7 @@
 
 
 
-.posters-item {
-    gap: 30px;
-}
+
 
 .portfolio-text-padding {
     padding-top: 20px;
@@ -103,7 +103,7 @@
 
 
 
-.description-poster {
+.poster-list__description {
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 400;
@@ -114,9 +114,10 @@
 
 }
 
-.poster-item__link {
+.poster-list__link {
     display: block;
     position: relative;
+    text-decoration: none;
     &:hover .overlay,
     &:focus .overlay {
             transform: translate(0, 0);
