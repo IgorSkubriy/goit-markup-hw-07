@@ -1,8 +1,83 @@
-.menu-portfolio {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+
+@media screen and (max-width: 767px){
+
+.section-portfolio {
+
+    padding-top: 60px;
+       
 }
+    .menu-portfolio {
+    display: flex;
+    gap: 8px;
+    row-gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.poster-list__item {
+    width: 450px;}
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .section-portfolio {
+
+        padding-top: 60px;
+       
+    }
+
+    .menu-portfolio {
+        display: flex;
+       
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+       
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+.poster-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 1199px;
+        /* макс ширина */
+        margin: 0 auto;
+        /* выровняем по центру */
+    }
+
+    .poster-list__item:not(:last-child) {
+        flex: 1 1 calc(50% - 30px);
+        /* отнимем margin и скажем растягиваться */
+        margin: 5px;
+        box-sizing: border-box;
+        /* чтобы внутренний отступ не влиял когда там будет текст... */
+
+
+        padding: 0px 0px;
+    }
+ .poster-item-boxes9 {
+     width: 345px;
+  
+ }
+   
+}
+
+@media screen and (min-width: 1200px){
+.poster-list__item {
+        width: 370px;
+    }
+}
+
+// .menu-portfolio {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 50px;
+// }
+
+
 
 
 
@@ -10,11 +85,6 @@
 .menu-portfolio__item:not(:last-child) {
     margin-right: 8px;
 }
-
-
-
-
-
 
 
 
@@ -84,7 +154,7 @@
 
 
 .poster-list__item {
-    width: 370px;
+  
     border: 1px solid #EEEEEE;
     transition: box-shadow var(--transition-dur-func);
 }

@@ -1,10 +1,88 @@
+
 .background-hero-sizes {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    min-height: 400px;
+    padding-top: 118px;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background\ img.jpg);
+    url(../../images/BG/hero-img.jpg);   
     background-size: cover;
     background-color: var(--secondary-background);
 }
+
+.efect-solution {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto;
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+.background-hero-sizes {
+    background-image: url(../../images/BG/hero-img@2x.jpg);
+}
+}
+
+
+@media screen and (min-width: 768px) {
+.background-hero-sizes {
+    background-image: url(../../images/BG/hero-tablet-img.jpg);
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px)
+{
+.background-hero-sizes {
+    background-image: url(../../images/BG/hero-tablet-img@2x.jpg);
+}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+.efect-solution {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+.background-hero-sizes {
+    padding-top: 200px;
+        min-height: 600px;  
+        background-image: url(../../images/BG/hero-desktop-img.jpg);
+    }
+    }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .background-hero-sizes {
+        background-image: url(../../images/BG/hero-desktop-img@2x.jpg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// .background-hero-sizes {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     text-align: center;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/background\ img.jpg);
+//     background-size: cover;
+//     background-color: var(--secondary-background);
+// }
 

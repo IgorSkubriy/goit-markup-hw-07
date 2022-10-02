@@ -48,7 +48,7 @@
             </ul>
         </nav>
 
-       <button type="button " class="mobile-menu-open "data-menu-open>
+       <button type="button " class="mobile-menu-open " data-menu-open>
         <svg class="mobile-menu-icon"  width="40" height="40"> 
         <use href="./images/sprite/sprite.svg#icon-burger" >
 
@@ -165,22 +165,19 @@
    
 
 
-<!-- 
+
 
 <main>
     <section class="hero">
 <div class="background-hero-sizes">
         <div class="container">
-            <h1 class="efect-solution">Эффективные решения <br> для вашего бизнеса</h1>
+            <h1 class="efect-solution">Эффективные решения для <br> вашего бизнеса</h1>
             <button type="button" class="m-button" data-modal-open>Заказать услугу</button>
         </div>
 </div>
     </section>
 
-   
-    
-
-    <section class="size-section">
+  <section class="size-section">
         <div class="container" >
             <h2 hidden>какие-то 4 пункта</h2>
             <ul class="list advantages-main-list">
@@ -203,7 +200,10 @@
             </ul>
         </div>
        
-</section>
+</section>   
+    
+
+  
 
 
 
@@ -214,14 +214,21 @@
 
                 <li class="what-we-do">
                     <div class="what-we-do1">
-                        <img src="./images/develop_1.jpg" alt="на бумаге" height="294" width="370">
+                        <img 
+                       srcset="./images/Whatwedo/paper-desktop-img.jpg, ./images/Whatwedo/paper-desktop-img@2x.jpg"
+                        src="./images/Whatwedo/paper-desktop-img.jpg"
+
+                         alt="на бумаге">
                         <p class="what-we-do-overlay" >Десктопні додатки</p>
                     </div>
                 </li>
             
                 <li class="what-we-do">
                     <div class="what-we-do1">
-                        <img src="./images/develop_2.jpg" alt="на телефоне" height="294" width="370">
+                        <img 
+                        srcset="./images/Whatwedo/notebook-desktop-img.jpg, ./images/Whatwedo/notebook-desktop-img@2x.jpg"
+                        src="./images/Whatwedo/notebook-desktop-img.jpg"
+                         alt="на телефоне">
                         <p class="what-we-do-overlay" >Мобільні додатки</p>
 
                     </div>
@@ -230,7 +237,10 @@
             
                 <li class="what-we-do">
                     <div class="what-we-do1">
-                    <img src="./images/develop_3.jpg" alt="на компьютере" height="294" width="370">
+                    <img 
+                    srcset="./images/Whatwedo/tablet-desktop-img.jpg, ./images/Whatwedo/tablet-desktop-img.jpg"
+                    src="./images/Whatwedo/tablet-desktop-img.jpg" 
+                    alt="на компьютере">
                     <p class="what-we-do-overlay">Дизайнерські рішення</p>
                     </div>
                    
@@ -242,15 +252,24 @@
 
 
 
-    <section class="section3-color size-section3">
+    <section class=" size-section3">
         <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="list section3">
 
 
                 <li class="section3-box">
-                    <img src="./images/игорь_демьяненко_1.jpg" alt="Игорь Демьненко" height="260" width="270">
-                    <div class="employee-padding ">
+                   
+                        <picture>
+                            <source srcset="./images/desktop/team/igor-270/igor-270.jpg 1x, ./images/desktop/team/igor-270/igor-270@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet/team/igor-354/igor-354.jpg 1x, ./images/tablet/team/igor-354/igor-354@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/mobile/team/igor-450/igor-450.jpg 1x, ./images/mobile/team/igor-450/igor-450@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/mobile/team/igor-450/igor-450.jpg" alt="Игорь Демьненко" />
+                        </picture>
+                        <div class="employee-padding ">
                         <h3 class="employee-name">Игорь Демьяненко</h3>
                         <p lang="en" class="employee-position">Product Designer</p>
                         
@@ -314,7 +333,16 @@
 
             
                 <li class="section3-box">
-                    <img src="./images/ольга_репина_2.jpg" alt="Ольга Репина" height="260" width="270">
+                    <picture>
+                        <source srcset="./images/desktop/team/olga-270/olga-270.jpg 1x, ./images/desktop/team/olga-270/olga-270@2x.jpg 2x"
+                         media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/team/olga-354/olga-354.jpg 1x, ./images/tablet/team/olga-354/olga-354@2x.jpg 2x" 
+                        media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/team/olga-450/olga-450.jpg 1x, ./images/mobile/team/olga-450/olga-450@2x.jpg 2x" 
+                        media="(max-width: 767px)" />
+                    <img src="./images/mobile/team/olga-450/olga-450.jpg" alt="Ольга Репина" />
+                    </picture>
+                   
                     <div class="employee-padding ">
                         <h3 class="employee-name">Ольга Репина</h3>
                         <p lang="en" class="employee-position">Frontend Developer</p>
@@ -365,7 +393,22 @@
 
             
                 <li class="section3-box">
-                    <img src="./images/никола_тарасов_3.jpg" alt="Николай Тарасов" height="260" width="270">
+               
+<picture>
+    <source
+        srcset="./images/desktop/team/nikolay-270/nikolay-270.jpg 1x, ./images/desktop/team/nikolay-270/nikolay-270@2x.jpg 2x"
+        media="(min-width: 1200px)" />
+    <source
+        srcset="./images/tablet/team/nikolay-354/nikolay-354.jpg 1x, ./images/tablet/team/nikolay-354/nikolay-354@2x.jpg  2x"
+        media="(min-width: 768px)" />
+    <source
+        srcset="./images/mobile/team/nikolay-450/nikolay-450.jpg 1x, ./images/mobile/team/nikolay-450/nikolay-450@2x.jpg 2x"
+        media="(max-width: 767px)" />
+    <img src="./images/mobile/team/nikolay-450/nikolay-450.jpg" alt="Николай Тарасов" />
+</picture>
+                
+                    
+                    
                     <div class="employee-padding">
                         <h3 class="employee-name">Николай Тарасов</h3>
                         <p lang="en" class="employee-position">UI Designer</p>
@@ -415,7 +458,19 @@
                 </li>
             
                 <li class="section3-box">
-                    <img src="./images/михаил_ермаков_4.jpg" alt="Михаил Ермаков" height="260" width="270">
+               
+
+                        <picture>
+                            <source
+                                srcset="./images/desktop/team/mykhail-270/mykhail-270.jpg 1x, ./images/desktop/team/mykhail-270/mykhail-270@2x.jpg  2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images/tablet/team/mykhail-354/mykhail-354.jpg 1x, ./images/tablet/team/mykhail-354/mykhail-354@2x.jpg  2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/mobile/team/mykhail-450/mykhail-450.jpg 1x, ./images/mobile/team/mykhail-450/mykhail-450@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/mobile/team/mykhail-450/mykhail-450.jpg" alt="Игорь Демьненко" />
+                        </picture>
                    <div class="employee-padding">
                     <h3 class="employee-name">Михаил Ермаков</h3>
                     <p lang="en" class="employee-position">UI Designer</p>
@@ -541,74 +596,78 @@
 
 <footer class="footer-pages">
     <div class="container footer-container">
-        <div class="footer-logo">
+        <div class="footer-pages-logo-address">
+            <div class="footer-logo">
 
-<a class="link logo" href="">Web<span class="logo-accent2">Studio</span></a>
-
-        
-         <address>
-            <ul class="list">
-                <li class="list__address">
-                    <a class="link footer-pages__address" href="https://goo.gl/maps/ts3VoMMfmy22Pk4LA" target="_blank"
-                        rel="noopener noreferrer">г. Киев, пр-т
-                        Леси Украинки, 26</a> </li>
-                <li class="list__item">
-                    <a class="link list__link" href="mailto:info@devstudio.com">info@example.com</a> </li>
-                <li class="list__item">
-                    <a class="link list__link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
-            </ul>
-        </address>
-        </div>
+     <a class="link logo" href="">Web<span class="logo-accent2">Studio</span></a>
 
 
-
-        <div class="footer-add">
-            <h3 class="footer-title">Присоединяйтесь</h3>
-            <ul class="footer-list">
-                <li class="list ">
-                    <a href="footer-list-link" class="footer-list__link">
-                        <svg  width="20" height="20">
-                            <use href="./images/sprite/sprite.svg#icon-instagram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                
-                
-                
-                <li class="list ">
-                    <a href="footer-list-link" class="footer-list__link">
-                        <svg  width="20" height="20">
-                            <use href="./images/sprite/sprite.svg#icon-twitter-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                
-                
-                
-                <li class="list ">
-                    <a href="footer-list-link" class="footer-list__link">
-                        <svg  width="20" height="20">
-                            <use href="./images/sprite/sprite.svg#icon-facebook-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                
-                
-                
-                <li class="list ">
-                    <a href="footer-list-link" class="footer-list__link">
-                        <svg width="20" height="20">
-                            <use href="./images/sprite/sprite.svg#icon-linkedin-1"></use>
-                        </svg>
-                    </a>
-
-            </ul>
+     <address>
+        <ul class="list">
+            <li class="list__address">
+                <a class="link footer-pages__address" href="https://goo.gl/maps/ts3VoMMfmy22Pk4LA" target="_blank"
+                    rel="noopener noreferrer">г. Киев, пр-т
+                    Леси Украинки, 26</a>
+            </li>
+            <li class="list__item">
+                <a class="link list__link" href="mailto:info@devstudio.com">info@example.com</a>
+            </li>
+            <li class="list__item">
+                <a class="link list__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+        </ul>
+     </address>
+             </div>
 
 
-        </div>
+
+      <div class="footer-add">
+      <h3 class="footer-title">Присоединяйтесь</h3>
+      <ul class="footer-list">
+        <li class="list ">
+            <a href="footer-list-link" class="footer-list__link">
+                <svg width="20" height="20">
+                    <use href="./images/sprite/sprite.svg#icon-instagram-2"></use>
+                </svg>
+            </a>
+        </li>
 
 
-        <div>
+
+        <li class="list ">
+            <a href="footer-list-link" class="footer-list__link">
+                <svg width="20" height="20">
+                    <use href="./images/sprite/sprite.svg#icon-twitter-1"></use>
+                </svg>
+            </a>
+        </li>
+
+
+
+        <li class="list ">
+            <a href="footer-list-link" class="footer-list__link">
+                <svg width="20" height="20">
+                    <use href="./images/sprite/sprite.svg#icon-facebook-1"></use>
+                </svg>
+            </a>
+        </li>
+
+
+
+        <li class="list ">
+            <a href="footer-list-link" class="footer-list__link">
+                <svg width="20" height="20">
+                    <use href="./images/sprite/sprite.svg#icon-linkedin-1"></use>
+                </svg>
+            </a>
+
+     </ul>
+
+
+     </div>
+</div>
+
+        <div class="footer-mailing-form">
         <p class="mailing-text">Підпишіться на розсилку</p>
 
         <form class="footer-form">
@@ -636,13 +695,11 @@
 
         </form>
         </div>
-    </div>
-
+   
+   </div>
 </footer>
 
-
-
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
     <div class="modal">
         <button type="button" class="modal-cls-button" data-modal-close>
             <svg class="modal-close-button-icon" width="18" height="18">
@@ -730,14 +787,14 @@
 
 
     </div>
-</div> -->
+</div>
 
 
 
 
-<script src="./js/mobile-menu.js"></script>
+<!-- <script src="./js/mobile-menu.js"></script> -->
 
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 
 </body>
 </html>

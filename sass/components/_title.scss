@@ -17,6 +17,9 @@
     color: #757575;
     margin-bottom: 4px;
 }
+
+
+
 .skills-title {
     font-weight: 700;
     font-size: 14px;
@@ -26,9 +29,16 @@
     color: var(--title-text-color);
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 767px) {
+    .skills-title {
+        text-align: center;
+    }
+}
+
 .section-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
@@ -36,10 +46,13 @@
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+    .section-title{
+        font-size: 36px;
+    }
+}
+
 .footer-title {
-    display: flex;
-    justify-content: left;
-    align-items: center;
     margin-bottom: 20px;
     text-transform: uppercase;
 

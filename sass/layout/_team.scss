@@ -1,29 +1,182 @@
 
 
-.employee-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 10px;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
+    .section3-box {
+        width: 100%;
+        background-color: var(--first-backgroungcolor);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        margin-bottom: 30px;
+    }
 
+    .employee-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 10px;
+    }
+
+   .employee-padding {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+   
+
+
+    .employee-position {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-list-link {
+        @extend %align;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        transition: background-color var(--transition-dur-func);
+
+        &:hover,
+        &:focus {
+            background-color: #2196F3;
+        }
+    }
+
+    .social-list-icon {
+        fill: #AFB1B8;
+        transition: fill var(--transition-dur-func);
+
+        .social-list-link:hover &,
+        .social-list-link:focus & {
+            fill: #FFFFFF;
+        }
+    }
+
+
+
+@media screen and (max-width: 767px) {
 .employee-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.section3 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
 
-.employee-position {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin-top: 10px;
-    margin-bottom: 16px;
+    }
+
+
+    .section3-box {
+        flex-basis: calc((100% - 30px)/2);
+        margin-bottom: 0;
+    }
+
+    
 }
+
+@media screen and (min-width: 1200px){
+
+    .section3 {
+        gap: 30px;
+        display: flex;
+        justify-content: space-between;
+      
+    } 
+}
+
+// .section3:not(:last-child) {
+//     margin-left: 30px;
+// }
+
+// .section3 {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .section3-box {
+//     background-color: var(--first-backgroungcolor);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
+
+// .employee-name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: #212121;
+//     margin-bottom: 10px;
+// }
+
+
+// .employee-padding {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+// }
+
+
+// .employee-position {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: #757575;
+//     margin-top: 10px;
+//     margin-bottom: 16px;
+// }
+// .social-list {
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px;
+// }
+
+// .social-list-link {
+//     @extend %align;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background-color: #FFFFFF;
+//     transition: background-color var(--transition-dur-func);
+
+//     &:hover,
+//     &:focus {
+//         background-color: #2196F3;
+//     }
+// }
+
+// .social-list-icon {
+//     fill: #AFB1B8;
+//     transition: fill var(--transition-dur-func);
+
+//     .social-list-link:hover &,
+//     .social-list-link:focus & {
+//         fill: #FFFFFF;
+//     }
+// }

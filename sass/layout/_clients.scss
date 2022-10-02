@@ -1,43 +1,18 @@
-.social-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.social-list-link {
-    @extend %align;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    transition: background-color var(--transition-dur-func);
-    &:hover,
-    &:focus {
-        background-color: #2196F3;
-    }
-}
-
-.social-list-icon {
-    fill: #AFB1B8;
-    transition: fill var(--transition-dur-func);
-.social-list-link:hover &,
-    .social-list-link:focus & {
-        fill: #FFFFFF;
-    }
-}
-
 
 
 .clients-list {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap:30px;
+    // justify-content: center;
+    // gap: 30px;
 }
+
+
 
 .clients-link {
 
     @extend %align;
-    width: 170px;
     height: 92px;
     border: #AFB1B8 1px solid;
     border-radius: 4px;
@@ -58,7 +33,46 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+.clients-item {
+        flex-basis: calc((100% - 30px)/2);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {  
 
 
+  .clients-list {
+    display: flex;
+        flex-wrap: wrap;
+         gap: 0;
+        max-width: 1199px;
+        /* макс ширина */
+        margin: 0 auto;
+        /* выровняем по центру */
+    }
+    
+        .clients-item {
+        flex: 1 1 calc(33.33% - 30px);
+        /* отнимем margin и скажем растягиваться */
+        margin: 5px;
+        box-sizing: border-box;
+        /* чтобы внутренний отступ не влиял когда там будет текст... */
+        
+       
+        padding: 10px 10px;
+       
+  
+    }
+
+    
+ }
+    
 
 
+@media screen and (min-width: 1200px)
+{
+.clients-link {
+    width: 170px;
+}
+}
