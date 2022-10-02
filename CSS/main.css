@@ -434,11 +434,20 @@ button {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-from-check-desk {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-from-check-desk {
+    font-size: 14px;
+  }
+}
 .modal-from-check-desk {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.17;
   color: rgb(117, 117, 117);
   margin-bottom: 30px;
@@ -510,6 +519,12 @@ button {
   padding: 40px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -519,6 +534,9 @@ button {
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--transition-dur-func), visibility var(--transition-dur-func);
+}
+
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
