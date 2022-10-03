@@ -1,6 +1,6 @@
   .skills-sizes {
       width: 100%;
-     
+      margin-top: 30px;
 
       &::before {
           display: block;
@@ -11,7 +11,7 @@
           background-position: center;
           background-color: #F5F4FA;
           margin-bottom: 30px;
-          margin-top: 30px;
+         
       }
     }
 
@@ -43,7 +43,13 @@
             color: #757575;
     
         }
-        
+      
+@media screen and (max-width: 767px){
+    .skills-sizes {
+        margin-top: 0;}
+
+}
+
 @media screen and (min-width: 768px) {
 .advantages-main-list {
         display: flex;
@@ -51,6 +57,7 @@
     }
 .skills-sizes {
         width: 354px;
+        margin-top: 0px;
     } 
 .icon-skills1{ margin-right: 30px;}
 .icon-skills3 { margin-right: 30px;}

@@ -186,24 +186,37 @@
                      padding-bottom: 20px;
         
                  }
-            .mailing-text {margin-bottom: 20px;}     
+            .mailing-text {margin-bottom: 20px;}
+            
+            .footer-form__input {
+                width: 100%;
+            }
+            .footer-form__submit {
+            margin-top: 20px;
+            }
     }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer-pages-logo-address {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        
     }
+.logo { 
+    margin-right: 0px;
+}
+         
         .footer-pages {
             padding-bottom: 60px;
             height: 463px;
+            text-align: center;
     
         }
        
 
         .footer-title {
                     display: flex;
-                    justify-content: left;
+                    justify-content: center;
                     align-items: center;
                    
                 }
@@ -213,6 +226,9 @@
 
         .mailing-text { margin-bottom: 20px;
                  }
+        .footer-form__submit {
+                       margin-top: 20px;
+                   }
         
 }
 

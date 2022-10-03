@@ -20,6 +20,9 @@
        
 
     .mobile-menu__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         position: relative;
         padding-left: 25px;
         padding-top: 48px;
@@ -45,10 +48,12 @@
     .mobile-menu__item:not(:last-child) {
         margin-bottom: 32px;
     }
-
-    .mobile-menu__item {
-        margin-bottom: 302px;
-    }
+.mobile-menu__list {
+    margin-bottom: auto;
+}
+    // .mobile-menu__item {
+    //     margin-bottom: 302px;
+    // }
 
 
     .mobile-menu__link {
@@ -62,6 +67,10 @@
             color: #2196F3;
         }
     }
+
+.mobile-menu-color {
+    color: #2196F3;
+}
 
     .mobile-menu-address__item:not(:last-child) {
         margin-bottom: 32px;
@@ -89,6 +98,7 @@
 
     .mobile-menu-footer {
         display: flex;
+        flex-wrap: wrap;
     }
 
 
@@ -117,5 +127,7 @@
 
 @media screen and (min-width:768px) {
     .mobile-menu {display: none;}
-    
+         .mobile-menu__item {
+             margin-bottom: 302px;
+         }
 }

@@ -41,25 +41,26 @@
 .poster-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 0;
-        max-width: 1199px;
+        gap: 0px;
+        // max-width: 1199px;
         /* макс ширина */
         margin: 0 auto;
         /* выровняем по центру */
     }
 
     .poster-list__item:not(:last-child) {
+        
         flex: 1 1 calc(50% - 30px);
-        /* отнимем margin и скажем растягиваться */
-        margin: 5px;
-        box-sizing: border-box;
+        // /* отнимем margin и скажем растягиваться */
+        margin: 0.01px;
+        // box-sizing: border-box;
         /* чтобы внутренний отступ не влиял когда там будет текст... */
 
 
         padding: 0px 0px;
     }
  .poster-item-boxes9 {
-     width: 345px;
+     width: 352px;
   
  }
    

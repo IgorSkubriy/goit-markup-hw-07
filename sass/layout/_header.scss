@@ -49,6 +49,7 @@
         display: none;
     }
 
+
  .nav {
      display: flex;
      align-items: center;
@@ -62,9 +63,12 @@
      align-items: center;
  }
 
+
+  
  .menu {
      display: flex;
      align-items: center;
+     margin-left: 93px;
  }
 
 
@@ -104,6 +108,7 @@
      letter-spacing: 0.03em;
      color: #000000;
  }
+ 
 
  .menu__link_color {
      font-weight: 500;
@@ -161,6 +166,7 @@
 
  .menu-address__icon {
      margin-right: 10px;
+     
      fill: currentColor;
 
  }

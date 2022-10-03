@@ -1,10 +1,12 @@
 
 .background-hero-sizes {
-    min-height: 400px;
+    height: 400px;
+    
     padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/BG/hero-img.jpg);   
+    url(../images/BG/hero-img.jpg);   
     background-size: cover;
     background-color: var(--secondary-background);
 }
@@ -24,14 +26,15 @@
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .background-hero-sizes {
-    background-image: url(../../images/BG/hero-img@2x.jpg);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/BG/hero-img@2x.jpg);
 }
 }
 
 
 @media screen and (min-width: 768px) {
 .background-hero-sizes {
-    background-image: url(../../images/BG/hero-tablet-img.jpg);
+   
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/BG/hero-tablet-img.jpg);
 }
 }
 
@@ -40,7 +43,7 @@ screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px)
 {
 .background-hero-sizes {
-    background-image: url(../../images/BG/hero-tablet-img@2x.jpg);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/BG/hero-tablet-img@2x.jpg);
 }
 }
 
@@ -55,7 +58,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px)
 .background-hero-sizes {
     padding-top: 200px;
         min-height: 600px;  
-        background-image: url(../../images/BG/hero-desktop-img.jpg);
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/BG/hero-desktop-img.jpg);
     }
     }
 
@@ -63,7 +66,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px)
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .background-hero-sizes {
-        background-image: url(../../images/BG/hero-desktop-img@2x.jpg);
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/BG/hero-desktop-img@2x.jpg);
     }
 }
 
